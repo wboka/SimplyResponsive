@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+		<title>pureJS</title>
+		
+		<style type="text/css">
+			/* General Styles */
+			* {
+				margin: 0;
+			}
+			
+			body > * {
+				padding: 3px;
+			}
+			
+			.container {
+				max-width: 992px;
+				width: 100%;
+				margin: 0 auto;
+			}
+			
+			.container-full {
+				width: 100%;
+			}
+			
+			.bg-green {
+				background: #00FF00;
+			}
+			
+			@media only screen and (min-width : 0px) {
+				.display {
+					display: block;
+				}
+			
+				.hidden, .display-sm, .display-md, .display-lg, .display-xl {
+					display: none;
+				}
+			}
+			
+			@media only screen and (min-width : 480px) {
+				.display-xs, .display-sm {
+					display: block;
+				}
+
+				.hidden-xs, .hidden-sm, .display-md, .display-lg, .display-xl {
+					display: none;
+				}
+			}
+			
+			@media only screen and (min-width : 768px) {
+				.display-xs, .display-sm, .display-md {
+					display: block;
+				}
+			
+				.hidden-xs, .hidden-sm, .hidden-md, .display-lg, .display-xl {
+					display: none;
+				}
+			}
+			
+			@media only screen and (min-width : 992px) {
+				.display-xs, .display-sm, .display-md, .display-lg {
+					display: block;
+				}
+			
+				.hidden-xs, .hidden-sm, .hidden-md, .hidden-lg, .display-xl {
+					display: none;
+				}
+			}
+			
+			@media only screen and (min-width : 1200px) {
+				.display-xs, .display-sm, .display-md, .display-lg, .display-xl {
+					display: block;
+				}
+				
+				.hidden-xs, .hidden-sm, .hidden-md, .hidden-lg, .hidden-xl {
+					display: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Useable screen width (px)</h1>
+		<p>Height: <span id="height"></span></p>
+		<p>Width: <span id="width"></span></p>
+		
+		<h2>Visible on screens</h2>
+		<p class="display">All screens</p>
+		<p class="display-sm">Small</p>
+		<p class="display-md">Medium</p>
+		<p class="display-lg">Large</p>
+		<p class="display-xl">Extra Large</p>
+		
+		<h2>Not hidden on screens</h2>
+		<p class="hidden">All screens</p>
+		<p class="hidden-sm">Small</p>
+		<p class="hidden-md">Medium</p>
+		<p class="hidden-lg">Large</p>
+		<p class="hidden-xl">Extra Large</p>
+		
+		<div class="container bg-green">
+			<p>Normal width: 100%</p>
+			<p>Max Width: 992px</p>
+		</div>
+		<hr />
+		<div class="container-full bg-green">
+			<p>Normal width: 100%</p>
+		</div>
+		
+		<script type="text/javascript">
+			var displayPortChanged = function() {
+				document.getElementById("height").innerText = window.innerHeight;
+				document.getElementById("width").innerText = window.innerWidth;
+			};
+			
+			document.getElementById("height").innerText = window.innerHeight;
+			document.getElementById("width").innerText = window.innerWidth;
+			
+			window.addEventListener("resize", displayPortChanged);
+		</script>
+	</body>
+</html>
