@@ -1,0 +1,228 @@
+/* General Styles */
+* {
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body { font-size: 14px; }
+
+body * {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #212121;
+	padding: 5px;
+}
+
+.container {
+	max-width: 992px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container-full { width: 100%; }
+
+.row {
+	clear: both;
+	display: block;
+	width: 100%;				
+}
+
+.no-border { border: none; }
+
+.bordered { border: 1px solid #212121; }
+
+.dotted-underline {
+	border: none;
+	border-bottom: 1px dotted #212121;
+}
+
+.dashed-underline {
+	border: none;
+	border-bottom: 1px dashed #212121;
+}
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12,
+.grid-sm-1, .grid-sm-2, .grid-sm-3, .grid-sm-4, .grid-sm-5, .grid-sm-6, .grid-sm-7, .grid-sm-8, .grid-sm-9, .grid-sm-10, .grid-sm-11, .grid-sm-12,
+.grid-lg-1, .grid-lg-2, .grid-lg-3, .grid-lg-4, .grid-lg-5, .grid-lg-6, .grid-lg-7, .grid-lg-8, .grid-lg-9, .grid-lg-10, .grid-lg-11, .grid-lg-12,
+.grid-xl-1, .grid-xl-2, .grid-xl-3, .grid-xl-4, .grid-xl-5, .grid-xl-6, .grid-xl-7, .grid-xl-8, .grid-xl-9, .grid-xl-10, .grid-xl-11, .grid-xl-12
+{
+	display: inline-block;
+	float: left;
+	min-height: 1px;
+}
+	
+.grid-12,
+.grid-sm-1, .grid-sm-2, .grid-sm-3, .grid-sm-4, .grid-sm-5, .grid-sm-6, .grid-sm-7, .grid-sm-8, .grid-sm-9, .grid-sm-10, .grid-sm-11, .grid-sm-12,
+.grid-lg-1, .grid-lg-2, .grid-lg-3, .grid-lg-4, .grid-lg-5, .grid-lg-6, .grid-lg-7, .grid-lg-8, .grid-lg-9, .grid-lg-10, .grid-lg-11, .grid-lg-12,
+.grid-xl-1, .grid-xl-2, .grid-xl-3, .grid-xl-4, .grid-xl-5, .grid-xl-6, .grid-xl-7, .grid-xl-8, .grid-xl-9, .grid-xl-10, .grid-xl-11, .grid-xl-12
+{ width: 100%; }
+.grid-11 { width: 91.66%; }
+.grid-10 { width: 83.33%; }
+.grid-9 { width: 75%; }				
+.grid-8 { width: 66.66%; }
+.grid-7 { width: 58.33%; }
+.grid-6 { width: 50%; }
+.grid-5 { width: 41.66%; }
+.grid-4 { width: 33.33%; }
+.grid-3 { width: 25%; }
+.grid-2 { width: 16.66%; }				
+.grid-1 { width: 8.33%; }
+
+/* BEGIN: Colors */
+.bg-green { background: #388E3C; }
+.bg-green:hover { background: #4CAF50; }
+
+.bg-light-green { background: #689F38; }
+.bg-light-green:hover { background: #8BC34A; }
+
+.bg-lime { background: #AFB42B; }
+.bg-lime:hover { background: #CDDC39; }
+
+.bg-yellow { background: #FBC02D; }
+.bg-yellow:hover { background: #FFEB3B; }
+
+.bg-amber { background: #FFA000; }
+.bg-amber:hover { background: #FFC107; }
+
+.bg-blue { background: #1976D2; }
+.bg-blue:hover { background: #2196F3; }
+
+.bg-light-blue { background: #0288D1; }
+.bg-light-blue:hover { background: #03A9F4; }
+
+.bg-indigo { background: #303F9F; }
+.bg-indigo:hover { background: #3F51B5; }
+
+.bg-cyan { background: #0097A7; }
+.bg-cyan:hover { background: #00BCD4; }
+
+.bg-teal { background: #00796B; }
+.bg-teal:hover { background: #009688; }
+
+.bg-red { background: #D32F2F; }
+.bg-red:hover { background: #F44336; }
+
+.bg-pink { background: #C2185B; }
+.bg-pink:hover { background: #E91E63; }
+
+.bg-purple { background: #7B1FA2; }
+.bg-purple:hover { background: #9C27B0; }
+
+.bg-dark-purple { background: #512DA8; }
+.bg-dark-purple:hover { background: #673AB7; }
+
+.bg-orange { background: #F57C00; }
+.bg-orange:hover { background: #FF9800; }
+
+.bg-dark-orange { background: #E64A19; }
+.bg-dark-orange:hover { background: #FF5722; }
+
+.bg-brown { background: #5D4037; }
+.bg-brown:hover { background: #795548; }
+
+.bg-grey { background: #616161; }
+.bg-grey:hover { background: #9E9E9E; }
+
+.bg-blue-grey { background: #455A64; }
+.bg-blue-grey:hover { background: #607D8B; }
+
+.bg-black { background: #000000; color: #FFFFFF; }
+.bg-black:hover { background: #333333; }
+/* END: Colors */
+
+/* BEGIN: Display */
+.display { display: block; }
+
+.hidden, .display-sm, .display-md, .display-lg, .display-xl { display: none; }
+
+.rounded {
+	border-radius: 3px 3px 3px 3px;
+	-moz-border-radius: 3px 3px 3px 3px;
+	-webkit-border-radius: 3px 3px 3px 3px;				
+}
+
+.rounded-full {
+	border-radius: 50% 50% 50% 50%;
+	-moz-border-radius: 50% 50% 50% 50%;
+	-webkit-border-radius: 50% 50% 50% 50%;
+}
+/* END: Display */
+
+@media screen and (min-width : 480px) {
+	.display-xs, .display-sm { display: block;
+	}
+
+	.hidden-xs, .hidden-sm, .display-md, .display-lg, .display-xl { display: none;
+	}
+	
+	.grid-sm-12 { width: 100%; }
+	.grid-sm-11 { width: 91.66%; }
+	.grid-sm-10 { width: 83.33%; }
+	.grid-sm-9 { width: 75%; }				
+	.grid-sm-8 { width: 66.66%; }
+	.grid-sm-7 { width: 58.33%; }
+	.grid-sm-6 { width: 50%; }
+	.grid-sm-5 { width: 41.66%; }
+	.grid-sm-4 { width: 33.33%; }
+	.grid-sm-3 { width: 25%; }
+	.grid-sm-2 { width: 16.66%; }				
+	.grid-sm-1 { width: 8.33%; }
+}
+
+@media screen and (min-width : 768px) {
+	.display-xs, .display-sm, .display-md { display: block; }
+
+	.hidden-xs, .hidden-sm, .hidden-md, .display-lg, .display-xl { display: none; }
+	
+	.grid-md-12 { width: 100%; }
+	.grid-md-11 { width: 91.66%; }
+	.grid-md-10 { width: 83.33%; }
+	.grid-md-9 { width: 75%; }				
+	.grid-md-8 { width: 66.66%; }
+	.grid-md-7 { width: 58.33%; }
+	.grid-md-6 { width: 50%; }
+	.grid-md-5 { width: 41.66%; }
+	.grid-md-4 { width: 33.33%; }
+	.grid-md-3 { width: 25%; }
+	.grid-md-2 { width: 16.66%; }				
+	.grid-md-1 { width: 8.33%; }
+}
+
+@media screen and (min-width : 992px) {
+	.display-xs, .display-sm, .display-md, .display-lg { display: block; }
+
+	.hidden-xs, .hidden-sm, .hidden-md, .hidden-lg, .display-xl { display: none; }
+	
+	.grid-lg-12 { width: 100%; }
+	.grid-lg-11 { width: 91.66%; }
+	.grid-lg-10 { width: 83.33%; }
+	.grid-lg-9 { width: 75%; }				
+	.grid-lg-8 { width: 66.66%; }
+	.grid-lg-7 { width: 58.33%; }
+	.grid-lg-6 { width: 50%; }
+	.grid-lg-5 { width: 41.66%; }
+	.grid-lg-4 { width: 33.33%; }
+	.grid-lg-3 { width: 25%; }
+	.grid-lg-2 { width: 16.66%; }				
+	.grid-lg-1 { width: 8.33%; }
+}
+
+@media screen and (min-width : 1200px) {
+	.display-xs, .display-sm, .display-md, .display-lg, .display-xl { display: block; }
+	
+	.hidden-xs, .hidden-sm, .hidden-md, .hidden-lg, .hidden-xl { display: none; }
+	
+	.grid-xl-12 { width: 100%; }
+	.grid-xl-11 { width: 91.66%; }
+	.grid-xl-10 { width: 83.33%; }
+	.grid-xl-9 { width: 75%; }				
+	.grid-xl-8 { width: 66.66%; }
+	.grid-xl-7 { width: 58.33%; }
+	.grid-xl-6 { width: 50%; }
+	.grid-xl-5 { width: 41.66%; }
+	.grid-xl-4 { width: 33.33%; }
+	.grid-xl-3 { width: 25%; }
+	.grid-xl-2 { width: 16.66%; }				
+	.grid-xl-1 { width: 8.33%; }
+}
