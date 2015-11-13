@@ -6,7 +6,12 @@
 	box-sizing: border-box;
 }
 
-address, blockquote, button, dl, footer, input, h1, h2, h3, h4, h5, h6, p, samp, select, table, th, td, [class^=grid], .clear-fix { padding: 5px; }
+address, blockquote, button, dl, footer, input, 
+h1, h2, h3, h4, h5, h6, 
+p, samp, select, table, th, td, ul.list-inline,
+[class^=grid], 
+.clear-fix 
+{ padding: 5px; }
 
 body {
 	color: #212121;
@@ -74,11 +79,6 @@ var { font-style: oblique; }
 	margin: 0 auto;
 }
 
-.width-full {
-	max-width: 100%;
-	width: 100%;
-}
-
 .dashed-underline {
 	border: none;
 	border-bottom: 1px dashed #212121;
@@ -90,6 +90,9 @@ var { font-style: oblique; }
 }
 
 .no-border { border: none; }
+
+.float-left { float: left; }
+.float-right { float: right; }
 
 .scroll { 
 	scroll: auto;
@@ -104,6 +107,11 @@ var { font-style: oblique; }
 .text-lower { text-transform: lowercase; }
 .text-capital { text-transform: capitalize; }
 .text-nowrap { white-space: nowrap; }
+
+.width-full {
+	max-width: 100%;
+	width: 100%;
+}
 
 /* Definitions */
 dt { font-weight: bold; }
