@@ -4,22 +4,24 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
+
 		<title>Simply Responsive | The Pure JS/CSS Framework</title>
 
 		<link rel="stylesheet" href="css/simple.css" />
 	</head>
 	<body>
-		<h1>Simply Responsive | The Pure JS/CSS Framework</h1>
+		<h1 class="text-center">Simply Responsive<br /><small>The Pure JS/CSS Framework</small></h1>
+
+		<div class="container">
+			<h2 class="bg-teal fg-white rounded">Screens</h2>
 		
-		<div class="clear-fix">
 			<div class="grid-sm-4">
-				<h2>Useable screen width (px)</h2>
+				<h3>Useable screen width (px)</h3>
 				<p>Height: <span id="height"></span></p>
 				<p>Width: <span id="width"></span></p>
 			</div>
 			<div class="grid-sm-4">
-				<h2>Visible on screens</h2>
+				<h3>Visible on screens</h3>
 				<p class="display">All screens</p>
 				<p class="display-sm">Small</p>
 				<p class="display-md">Medium</p>
@@ -27,391 +29,945 @@
 				<p class="display-xl">Extra Large</p>
 			</div>
 			<div class="grid-sm-4">
-				<h2>Not hidden on screens</h2>
+				<h3>Not hidden on screens</h3>
 				<p class="hidden">All screens</p>
 				<p class="hidden-sm">Small</p>
 				<p class="hidden-md">Medium</p>
 				<p class="hidden-lg">Large</p>
 				<p class="hidden-xl">Extra Large</p>
 			</div>
+			
+			<div class="clear-fix"></div>
 		</div>
 		
-		<div class="clear-fix"></div>
-
 		<h2>.container</h2>
+		
 		<div class="container bg-amber">
 			<p>Normal width: 100%</p>
 			<p>Max Width: 992px</p>
 		</div>
 
-		<h2>.container-full</h2>
-		<div class="container-full bg-amber">
+		<h2>.container.width-full</h2>
+		<div class="container width-full bg-amber">
 			<p>Normal width: 100%</p>
+			<p>Max Width: 100%</p>
 		</div>
 		
-		<h2>Colors</h2>
-		<div class="clear-fix">
+		<div class="container">
+			<h2 class="bg-blue fg-white rounded">Typography</h2>
+			
+			<div class="clear-fix">
+				<div class="grid-sm-6">
+					<h1>Heading 1</h1>
+					<h2>Heading 2</h2>
+					<h3>Heading 3</h3>
+					<h4>Heading 4</h4>
+					<h5>Heading 5</h5>
+					<h6>Heading 6</h6>
+				</div>
+				<div class="grid-sm-6">
+					<h1>Heading 1 <small>Sub Heading 1</small></h1>
+					<h2>Heading 2 <small>Sub Heading 2</small></h2>
+					<h3>Heading 3 <small>Sub Heading 3</small></h3>
+					<h4>Heading 4 <small>Sub Heading 4</small></h4>
+					<h5>Heading 5 <small>Sub Heading 5</small></h5>
+					<h6>Heading 6 <small>Sub Heading 6</small></h6>
+				</div>
+			</div>
+			
+			<h3>Content</h3>
+			
+			<p>Paragraph</p>
+			
+			<mark>Marked</mark>
+			<del>Deleted</del>
+			<s>Strikethrough</s>
+			<ins>Inserted</ins>
+			<u>Underlined</u>
+			<b>Bold</b>
+			<strong>Strong</strong>
+			<i>Italic</i>
+			<em>Emphasise</em>
+			
+			<h3>Alignment</h3>
+			
+			<p class="text-left">Left aligned text.</p>
+			<p class="text-center">Center aligned text.</p>
+			<p class="text-right">Right aligned text.</p>
+			<p class="text-justify">Justified text.</p>
+			<p class="text-nowrap">No wrap text.</p>
+			
+			<h3>Transform</h3>
+			
+			<p class="text-lower">Lowercased text.</p>
+			<p class="text-upper">Uppercased text.</p>
+			<p class="text-capital">Capitalized text.</p>
+			
+			<h3>Abbreviations</h3>
+			
+			<abbr title="abbreviation">abbr</abbr>
+			
+			<h3>Addresses</h3>
+			
+			<address>
+				<strong>Company, Inc.</strong><br />
+				123 Main St<br />
+				City, ST 123456<br />
+				<abbr title="Phone">P:</abbr> (123) 456-7890
+			</address>
+
+			<address>
+				<strong>John Smith</strong><br />
+				<a href="mailto:#">email@example.com</a>
+			</address>
+			
+			<h3>Blockquote</h3>
+			
+			<blockquote>
+				<p>This is a blockquote</p>
+				<p>This is a blockquote</p>
+				<p>This is a blockquote</p>
+				<p>This is a blockquote</p>
+			</blockquote>
+			
+			<blockquote>
+				<p>
+					This is a blockquote<br />
+					This is a blockquote<br />
+					This is a blockquote<br />
+					This is a blockquote<br />
+					This is a blockquote<br />
+				</p>
+				
+				<footer>A poem by <cite>Author Unknown</cite></footer>
+			</blockquote>
+			
+			<h3>Lists</h3>
+			
+			<h4>Unordered</h4>
+			
+			<ul>
+				<li>List Item</li>
+				<li>List Item</li>
+				<li>List Item</li>
+				<li>List Item</li>
+				<ul>
+					<li>List Item</li>
+					<li>List Item</li>
+					<li>List Item</li>
+				</ul>
+				<li>List Item</li>
+				<li>List Item</li>
+			</ul>
+			
+			<h4>Unordered <small>No Style</small></h4>
+			
+			<ul class="list-nostyle">
+				<li>List Item</li>
+				<li>List Item</li>
+				<li>List Item</li>
+				<li>List Item</li>
+				<ul>
+					<li>List Item</li>
+					<li>List Item</li>
+					<li>List Item</li>
+				</ul>
+				<li>List Item</li>
+				<li>List Item</li>
+			</ul>
+			
+			<h4>Unordered <small>Inline</small></h4>
+			
+			<ul class="list-inline">
+				<li>List Item</li>
+				<li>List Item</li>
+				<li>List Item</li>
+				<li>List Item</li>
+				<ul>
+					<li>List Item</li>
+					<li>List Item</li>
+					<li>List Item</li>
+				</ul>
+				<li>List Item</li>
+				<li>List Item</li>
+			</ul>
+			
+			<h4>Ordered</h4>
+			
+			<ol>
+				<li>List Item</li>
+				<li>List Item</li>
+				<li>List Item</li>
+				<li>List Item</li>
+				<ol>
+					<li>List Item</li>
+					<li>List Item</li>
+					<li>List Item</li>
+				</ol>
+				<li>List Item</li>
+				<li>List Item</li>
+			</ol>
+			
+			<h3>Definitions</h3>
+			
+			<dl>
+				<dt>Term</dt>
+				<dd>Definition</dd>
+				<dt>Term</dt>
+				<dd>Definition</dd>
+				<dt>Term</dt>
+				<dd>Definition</dd>
+				<dt>Term</dt>
+				<dd>Definition</dd>
+				<dt>Term</dt>
+				<dd>Definition</dd>
+				<dt>Term</dt>
+				<dd>Definition</dd>
+			</dl>
+			
+			<h3>Code, Keyboard, &amp; Pre-formatted Text</h3>
+			
+			<p>Paragraph with <code>code</code></p>
+			<p>Paragraph with <kbd>kbd</kbd></p>
+			
+	<pre>
+		Pre-formatted    text
+		**********
+		*******
+		  *****
+		   ***
+		   *
+	</pre>
+
+			<h3>Variables</h3>
+			
+			<p><var>x</var> = <var>y</var> + 2</p>
+			
+			<h3>Sample</h3>
+			
+			<samp>Sample output from a program.</samp>
+		</div>
+		
+		<div class="container">
+			<h2 class="bg-brown fg-white rounded">Tables</h2>
+
+			<h3>Basic</h3>
+			
+			<table>
+				<thead>
+					<tr>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+					</tr>
+				</tfoot>
+			</table>
+			
+			<h3>Shrink</h3>
+			
+			<table class="table-shrink">
+				<thead>
+					<tr>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+					</tr>
+				</tfoot>
+			</table>
+			
+			<h3>Striped Rows <small>TBODY only</small></h3>
+			
+			<table class="table-striped">
+				<thead>
+					<tr>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+					</tr>
+				</tfoot>
+			</table>
+			
+			<h3>Bordered</h3>
+			
+			<table class="table-bordered">
+				<thead>
+					<tr>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+					</tr>
+				</tfoot>
+			</table>
+			
+			<h3>Hover</h3>
+			
+			<table class="table-hover">
+				<thead>
+					<tr>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+					</tr>
+					<tr>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+					</tr>
+					<tr>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+					</tr>
+					<tr>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+					</tr>
+					<tr>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+					</tr>
+					<tr>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+					</tr>
+					<tr>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+					</tr>
+					<tr>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+					</tr>
+					<tr>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+						<td>td</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+						<th>th</th>
+					</tr>
+				</tfoot>
+			</table>
+			
+			<h3>Using Scroll with Tables <small>Screens &lt; 768px wide</small></h3>
+			
+			<div class="scroll">
+				<table>
+					<thead>
+						<tr>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>td</td>
+							<td>td</td>
+							<td>td</td>
+							<td>td</td>
+							<td>td</td>
+							<td>td</td>
+							<td>td</td>
+							<td>td</td>
+							<td>td</td>
+							<td>td</td>
+							<td>td</td>
+							<td>td</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+							<th>th</th>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+		
+		<div class="container">
+			<h2 class="bg-orange fg-white rounded">Colors</h2>
+
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Red</h3>
 				<p class="bg-red">.bg-red</p>
 				<p class="fg-red">.fg-red</p>
-				<button type="button" class="bg-red bordered hover">.bg-red.bordered.hover</button>
-				<button type="button" class="bg-red rounded hover">.bg-red.rounded.hover</button>
-				<button type="button" class="bg-red rounded hover no-border">.bg-red.no-border.rounded.hover</button>
 			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Pink</h3>
 				<p class="bg-pink">.bg-pink</p>
 				<p class="fg-pink">.fg-pink</p>
-				<button type="button" class="bg-pink bordered hover">.bg-pink.bordered.hover</button>
-				<button type="button" class="bg-pink rounded hover">.bg-pink.rounded.hover</button>
-				<button type="button" class="bg-pink rounded hover no-border">.bg-pink.no-border.rounded.hover</button>
 			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Purple</h3>
 				<p class="bg-purple">.bg-purple</p>
 				<p class="fg-purple">.fg-purple</p>
-				<button type="button" class="bg-pink bordered hover">.bg-pink.bordered.hover</button>
-				<button type="button" class="bg-pink rounded hover">.bg-pink.rounded.hover</button>
-				<button type="button" class="bg-pink rounded hover no-border">.bg-pink.no-border.rounded.hover</button>
 			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Dark Purple</h3>
 				<p class="bg-dark-purple">.bg-dark-purple</p>
 				<p class="fg-dark-purple">.fg-dark-purple</p>
-				<button type="button" class="bg-dark-purple bordered hover">.bg-dark-purple.bordered.hover</button>
-				<button type="button" class="bg-dark-purple rounded hover">.bg-dark-purple.rounded.hover</button>
-				<button type="button" class="bg-dark-purple rounded hover no-border">.bg-dark-purple.no-border.rounded.hover</button>
 			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Indigo</h3>
 				<p class="bg-indigo">.bg-indigo</p>
 				<p class="fg-indigo">.fg-indigo</p>
-				<button type="button" class="bg-indigo bordered hover">.bg-indigo.bordered.hover</button>
-				<button type="button" class="bg-indigo rounded hover">.bg-indigo.rounded.hover</button>
-				<button type="button" class="bg-indigo rounded hover no-border">.bg-indigo.no-border.rounded.hover</button>
 			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Blue</h3>
 				<p class="bg-blue">.bg-blue</p>
 				<p class="fg-blue">.fg-blue</p>
-				<button type="button" class="bg-blue bordered hover">.bg-blue.bordered.hover</button>
-				<button type="button" class="bg-blue rounded hover">.bg-blue.rounded.hover</button>
-				<button type="button" class="bg-blue rounded hover no-border">.bg-blue.no-border.rounded.hover</button>
 			</div>
-		</div>
-		<div class="clear-fix">
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Light Blue</h3>
 				<p class="bg-light-blue">.bg-light-blue</p>
 				<p class="fg-light-blue">.fg-light-blue</p>
-				<button type="button" class="bg-light-blue bordered hover">.bg-light-blue.bordered.hover</button>
-				<button type="button" class="bg-light-blue rounded hover">.bg-light-blue.rounded.hover</button>
-				<button type="button" class="bg-light-blue rounded hover no-border">.bg-light-blue.no-border.rounded.hover</button>
 			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Cyan</h3>
 				<p class="bg-cyan">.bg-cyan</p>
 				<p class="fg-cyan">.fg-cyan</p>
-				<button type="button" class="bg-cyan bordered hover">.bg-cyan.bordered.hover</button>
-				<button type="button" class="bg-cyan rounded hover">.bg-cyan.rounded.hover</button>
-				<button type="button" class="bg-cyan rounded hover no-border">.bg-cyan.no-border.rounded.hover</button>
 			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Teal</h3>
 				<p class="bg-teal">.bg-teal</p>
 				<p class="fg-teal">.fg-teal</p>
-				<button type="button" class="bg-teal bordered hover">.bg-teal.bordered.hover</button>
-				<button type="button" class="bg-teal rounded hover">.bg-teal.rounded.hover</button>
-				<button type="button" class="bg-teal rounded hover no-border">.bg-teal.no-border.rounded.hover</button>
 			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Green</h3>
 				<p class="bg-green">.bg-green</p>
 				<p class="fg-green">.fg-green</p>
-				<button type="button" class="bg-green bordered hover">.bg-green.bordered.hover</button>
-				<button type="button" class="bg-green rounded hover">.bg-green.rounded.hover</button>
-				<button type="button" class="bg-green rounded hover no-border">.bg-green.no-border.rounded.hover</button>
 			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Light Green</h3>
 				<p class="bg-light-green">.bg-light-green</p>
 				<p class="fg-light-green">.fg-light-green</p>
-				<button type="button" class="bg-light-green bordered hover">.bg-light-green.bordered.hover</button>
-				<button type="button" class="bg-light-green rounded hover">.bg-light-green.rounded.hover</button>
-				<button type="button" class="bg-light-green rounded hover no-border">.bg-light-green.no-border.rounded.hover</button>
 			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Lime</h3>
 				<p class="bg-lime">.bg-lime</p>
 				<p class="fg-lime">.fg-lime</p>
-				<button type="button" class="bg-lime bordered hover">.bg-lime.bordered.hover</button>
-				<button type="button" class="bg-lime rounded hover">.bg-lime.rounded.hover</button>
-				<button type="button" class="bg-lime rounded hover no-border">.bg-lime.no-border.rounded.hover</button>
 			</div>
-		</div>
-		<div class="clear-fix">
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Yellow</h3>
 				<p class="bg-yellow">.bg-yellow</p>
 				<p class="fg-yellow">.fg-yellow</p>
-				<button type="button" class="bg-yellow bordered hover">.bg-yellow.bordered.hover</button>
-				<button type="button" class="bg-yellow rounded hover">.bg-yellow.rounded.hover</button>
-				<button type="button" class="bg-yellow rounded hover no-border">.bg-yellow.no-border.rounded.hover</button>
 			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Amber</h3>
 				<p class="bg-amber">.bg-amber</p>
 				<p class="fg-amber">.fg-amber</p>
-				<button type="button" class="bg-amber bordered hover">.bg-amber.bordered.hover</button>
-				<button type="button" class="bg-amber rounded hover">.bg-amber.rounded.hover</button>
-				<button type="button" class="bg-amber rounded hover no-border">.bg-amber.no-border.rounded.hover</button>
 			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Orange</h3>
 				<p class="bg-orange">.bg-orange</p>
 				<p class="fg-orange">.fg-orange</p>
-				<button type="button" class="bg-orange bordered hover">.bg-orange.bordered.hover</button>
-				<button type="button" class="bg-orange rounded hover">.bg-orange.rounded.hover</button>
-				<button type="button" class="bg-orange rounded hover no-border">.bg-orange.no-border.rounded.hover</button>
 			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Dark Orange</h3>
 				<p class="bg-dark-orange">.bg-dark-orange</p>
 				<p class="fg-dark-orange">.fg-dark-orange</p>
-				<button type="button" class="bg-dark-orange bordered hover">.bg-dark-orange.bordered.hover</button>
-				<button type="button" class="bg-dark-orange rounded hover">.bg-dark-orange.rounded.hover</button>
-				<button type="button" class="bg-dark-orange rounded hover no-border">.bg-dark-orange.no-border.rounded.hover</button>
 			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Brown</h3>
 				<p class="bg-brown">.bg-brown</p>
 				<p class="fg-brown">.fg-brown</p>
-				<button type="button" class="bg-brown bordered hover">.bg-brown.bordered.hover</button>
-				<button type="button" class="bg-brown rounded hover">.bg-brown.rounded.hover</button>
-				<button type="button" class="bg-brown rounded hover no-border">.bg-brown.no-border.rounded.hover</button>
 			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Grey</h3>
 				<p class="bg-grey">.bg-grey</p>
 				<p class="fg-grey">.fg-grey</p>
-				<button type="button" class="bg-grey bordered hover">.bg-grey.bordered.hover</button>
-				<button type="button" class="bg-grey rounded hover">.bg-grey.rounded.hover</button>
-				<button type="button" class="bg-grey rounded hover no-border">.bg-grey.no-border.rounded.hover</button>
 			</div>
-		</div>
-		<div class="clear-fix">
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Blue Grey</h3>
 				<p class="bg-blue-grey">.bg-blue-grey</p>
 				<p class="fg-blue-grey">.fg-blue-grey</p>
-				<button type="button" class="bg-blue-grey bordered hover">.bg-blue-grey.bordered.hover</button>
-				<button type="button" class="bg-blue-grey rounded hover">.bg-blue-grey.rounded.hover</button>
-				<button type="button" class="bg-blue-grey rounded hover no-border">.bg-blue-grey.no-border.rounded.hover</button>
-			</div>		
+			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>Black</h3>
 				<p class="bg-black fg-white">.bg-black</p>
 				<p class="bg-white fg-black">.fg-black</p>
-				<button type="button" class="bg-black fg-white bordered hover">.bg-black.bordered.hover</button>
-				<button type="button" class="bg-black fg-white rounded hover">.bg-black.rounded.hover</button>
-				<button type="button" class="bg-black fg-white rounded hover no-border">.bg-black.no-border.rounded.hover</button>
 			</div>
 			<div class="grid-6 grid-sm-3 grid-md-2">
 				<h3>White</h3>
 				<p class="bg-white fg-black">.bg-white</p>
 				<p class="bg-black fg-white">.fg-white</p>
-				<button type="button" class="bg-white bordered hover">.bg-white.bordered.hover</button>
-				<button type="button" class="bg-white rounded hover">.bg-white.rounded.hover</button>
-				<button type="button" class="bg-white rounded hover bordered">.bg-white.bordered.rounded.hover</button>
 			</div>
-		</div>
-		<h2>Grid</h2>
-		<div class="clear-fix">
-			<div class="grid-1 bordered">.grid-1</div>
-			<div class="grid-1 bordered">.grid-1</div>
-			<div class="grid-1 bordered">.grid-1</div>
-			<div class="grid-1 bordered">.grid-1</div>
-			<div class="grid-1 bordered">.grid-1</div>
-			<div class="grid-1 bordered">.grid-1</div>
-			<div class="grid-1 bordered">.grid-1</div>
-			<div class="grid-1 bordered">.grid-1</div>
-			<div class="grid-1 bordered">.grid-1</div>
-			<div class="grid-1 bordered">.grid-1</div>
-			<div class="grid-1 bordered">.grid-1</div>
-			<div class="grid-1 bordered">.grid-1</div>
+			
+			<div class="clear-fix"></div>
 		</div>
 		
-		<div class="clear-fix">
-			<div class="grid-2 bordered">.grid-2</div>
-			<div class="grid-2 bordered">.grid-2</div>
-			<div class="grid-2 bordered">.grid-2</div>
-			<div class="grid-2 bordered">.grid-2</div>
-			<div class="grid-2 bordered">.grid-2</div>
-			<div class="grid-2 bordered">.grid-2</div>
-		</div>
+		<div class="container">
+			<h2 class="bg-lime fg-white rounded">Grids</h2>
+			
+			<h3>Non-responsive</h3>
+			
+			<div class="grid-1 bordered">.grid-1</div>
+			<div class="grid-1 bordered">.grid-1</div>
+			<div class="grid-1 bordered">.grid-1</div>
+			<div class="grid-1 bordered">.grid-1</div>
+			<div class="grid-1 bordered">.grid-1</div>
+			<div class="grid-1 bordered">.grid-1</div>
+			<div class="grid-1 bordered">.grid-1</div>
+			<div class="grid-1 bordered">.grid-1</div>
+			<div class="grid-1 bordered">.grid-1</div>
+			<div class="grid-1 bordered">.grid-1</div>
+			<div class="grid-1 bordered">.grid-1</div>
+			<div class="grid-1 bordered">.grid-1</div>
 		
-		<div class="clear-fix">
+			<div class="grid-2 bordered">.grid-2</div>
+			<div class="grid-2 bordered">.grid-2</div>
+			<div class="grid-2 bordered">.grid-2</div>
+			<div class="grid-2 bordered">.grid-2</div>
+			<div class="grid-2 bordered">.grid-2</div>
+			<div class="grid-2 bordered">.grid-2</div>
+		
 			<div class="grid-3 bordered">.grid-3</div>
 			<div class="grid-3 bordered">.grid-3</div>
 			<div class="grid-3 bordered">.grid-3</div>
-			<div class="grid-3 bordered">.grid-3</div>			
-		</div>
+			<div class="grid-3 bordered">.grid-3</div>
 		
-		<div class="clear-fix">
 			<div class="grid-4 bordered">.grid-4</div>
 			<div class="grid-4 bordered">.grid-4</div>
-			<div class="grid-4 bordered">.grid-4</div>			
-		</div>
+			<div class="grid-4 bordered">.grid-4</div>
 		
-		<div class="clear-fix">
 			<div class="grid-5 bordered">.grid-5</div>
 			<div class="grid-5 bordered">.grid-5</div>
 			<div class="grid-2 bordered">.grid-2</div>
-		</div>
 		
-		<div class="clear-fix">
 			<div class="grid-6 bordered">.grid-6</div>
 			<div class="grid-6 bordered">.grid-6</div>
-		</div>
-		<div class="clear-fix">
+
 			<div class="grid-7 bordered">.grid-7</div>
 			<div class="grid-5 bordered">.grid-5</div>
-		</div>
-		<div class="clear-fix">
+
 			<div class="grid-8 bordered">.grid-8</div>
 			<div class="grid-4 bordered">.grid-4</div>
-		</div>
-		<div class="clear-fix">
+
 			<div class="grid-9 bordered">.grid-9</div>
 			<div class="grid-3 bordered">.grid-3</div>
-		</div>
-		<div class="clear-fix">
+
 			<div class="grid-10 bordered">.grid-10</div>
 			<div class="grid-2 bordered">.grid-2</div>
-		</div>
-		<div class="clear-fix">
+
 			<div class="grid-11 bordered">.grid-11</div>
 			<div class="grid-1 bordered">.grid-1</div>
-		</div>
-		<div class="clear-fix">
+
 			<div class="grid-12 bordered">.grid-12</div>
+			
+			<div class="clear-fix"></div>
+
+			<h3>Responsive</h3>
+			
+			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+
+			<div class="clear-fix"></div>
+
+			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+
+			<div class="clear-fix"></div>
+
+			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
+
+			<div class="clear-fix"></div>
+
+			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
+			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
+
+			<div class="clear-fix"></div>
+
+			<div class="grid-xl-1 bordered">.grid-xl-1</div>
+			<div class="grid-xl-1 bordered">.grid-xl-1</div>
+			<div class="grid-xl-1 bordered">.grid-xl-1</div>
+			<div class="grid-xl-1 bordered">.grid-xl-1</div>
+			<div class="grid-xl-1 bordered">.grid-xl-1</div>
+			<div class="grid-xl-1 bordered">.grid-xl-1</div>
+			<div class="grid-xl-1 bordered">.grid-xl-1</div>
+			<div class="grid-xl-1 bordered">.grid-xl-1</div>
+			<div class="grid-xl-1 bordered">.grid-xl-1</div>
+			<div class="grid-xl-1 bordered">.grid-xl-1</div>
+			<div class="grid-xl-1 bordered">.grid-xl-1</div>
+			<div class="grid-xl-1 bordered">.grid-xl-1</div>
+
+			<div class="clear-fix"></div>
 		</div>
-		
-		<h2>Responsive Grid</h2>
-		<div class="clear-fix">
-			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-12 grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-12<br />.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-		</div>
-		
-		<hr />
-		
-		<div class="clear-fix">
-			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-sm-6 grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-sm-6<br />.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-		</div>
-		
-		<hr />
-		
-		<div class="clear-fix">
-			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-md-4 grid-lg-3 grid-xl-1 bordered">.grid-md-4<br />.grid-lg-3<br />.grid-xl-1</div>
-		</div>
-		
-		<hr />
-		
-		<div class="clear-fix">
-			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
-			<div class="grid-lg-3 grid-xl-1 bordered">.grid-lg-3<br />.grid-xl-1</div>
-		</div>
-		
-		<hr />
-		
-		<div class="clear-fix">
-			<div class="grid-xl-1 bordered">.grid-xl-1</div>
-			<div class="grid-xl-1 bordered">.grid-xl-1</div>
-			<div class="grid-xl-1 bordered">.grid-xl-1</div>
-			<div class="grid-xl-1 bordered">.grid-xl-1</div>
-			<div class="grid-xl-1 bordered">.grid-xl-1</div>
-			<div class="grid-xl-1 bordered">.grid-xl-1</div>
-			<div class="grid-xl-1 bordered">.grid-xl-1</div>
-			<div class="grid-xl-1 bordered">.grid-xl-1</div>
-			<div class="grid-xl-1 bordered">.grid-xl-1</div>
-			<div class="grid-xl-1 bordered">.grid-xl-1</div>
-			<div class="grid-xl-1 bordered">.grid-xl-1</div>
-			<div class="grid-xl-1 bordered">.grid-xl-1</div>
-		</div>
-		
-		<h2>Round Corners</h2>
-		<h3>.rounded</h3>
-		<div class="clear-fix">
+
+		<div class="container">
+			<h2 class="bg-cyan fg-white rounded">Round Corners</h2>
+			
+			<h3>.rounded</h3>
+			
 			<div class="grid-sm-3 grid-md-3">
 				<div class="bg-black rounded" style="height: 40px; width: 40px;"></div>
 			</div>
 			<div class="grid-sm-3 grid-md-3">
-				<input type="text" class="bordered rounded" />
+				<label>Input</label>
+				<input type="text" class="bordered rounded width-full" />
 			</div>
 			<div class="grid-sm-3 grid-md-3">
 				<button type="button" class="bg-green hover no-border rounded">Button</button>
 			</div>
 			<div class="grid-sm-3">
-				<select class="bordered rounded" multiple>
+				<label>Select (Multiple)</label>
+				<select class="bordered rounded width-full" multiple>
 					<option value="1">Option 1</option>
 					<option value="2">Option 2</option>
 					<option value="3">Option 3</option>
 					<option value="4">Option 4</option>
 				</select>
-				<select class="bordered rounded">
+				<label>Select</label>
+				<select class="bordered rounded width-full">
 					<option value="1">Option 1</option>
 					<option value="2">Option 2</option>
 					<option value="3">Option 3</option>
 					<option value="4">Option 4</option>
 				</select>
 			</div>
-		</div>
-		
-		<h3>.rounded-full</h3>
-		<div class="clear-fix">
+
+			<h3>.rounded-full</h3>
+			
 			<div class="grid-6 grid-sm-3 grid-md-1">
 				<div class="bg-black rounded-full" style="height: 40px; width: 40px;"></div>
 			</div>
@@ -448,6 +1004,8 @@
 			<div class="grid-6 grid-sm-3 grid-md-1">
 				<div class="bg-lime rounded-full" style="height: 40px; width: 40px;"></div>
 			</div>
+
+			<div class="clear-fix"></div>
 		</div>
 
 		<script type="text/javascript">
@@ -455,16 +1013,16 @@
 				document.getElementById("height").innerHTML = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 				document.getElementById("width").innerHTML = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 			};
-			
+
 			displayPortChanged();
-			
+
 			if (window.addEventListener) {
 				window.addEventListener("resize", displayPortChanged);
 			} else {
 				window.onresize = displayPortChanged;
 			}
 		</script>
-		
+
 		<!--[if lt IE 9]>
 			<script src="js/simple-ie-fix.js"></script>
 		<![endif]-->
