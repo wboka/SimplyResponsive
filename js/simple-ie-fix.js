@@ -11,6 +11,10 @@ if (!document.getElementsByClassName) {
 	};
 }
 
+if (!document.addEventListener) {
+	document.addEventListener = document.addEvent;
+}
+
 var SimpleJS = {
 	breakpoints: {
 		sm: 480,
