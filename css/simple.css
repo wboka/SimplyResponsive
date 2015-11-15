@@ -6,11 +6,14 @@
 	box-sizing: border-box;
 }
 
+article, aside, div, dt, figcaption, footer, form, header, hgroup, html, main, nav, section {
+	display: block;
+}
+
 address, blockquote, button, dl, footer, input, 
 h1, h2, h3, h4, h5, h6, 
 p, samp, select, table, th, td, ul.list-inline,
-[class^=grid], 
-.clear-fix 
+[class^=grid]
 { padding: 5px; }
 
 body {
