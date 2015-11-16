@@ -164,7 +164,7 @@ button.active, button:active{
 
 /* BEGIN: Colors */
 .bg-green { background: #388E3C; }
-.fg-green { color: #388E3C; }
+.fg-green, ins { color: #388E3C; }
 .fg-green.bordered { border: 1px solid #388E3C; }
 .bg-green.hover:hover { background: #4CAF50; }
 
@@ -205,7 +205,7 @@ button.active, button:active{
 .bg-teal.hover:hover { background: #009688; }
 
 .bg-red { background: #D32F2F; }
-.fg-red { color: #D32F2F; }
+.fg-red, del { color: #D32F2F; }
 .bg-red.hover:hover { background: #F44336; }
 
 .bg-pink { background: #C2185B; }
